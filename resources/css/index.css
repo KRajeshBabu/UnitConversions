@@ -1,0 +1,39 @@
+.text-field {
+    position: relative;
+    margin: 10px 2.5px 20px 2.5px;
+}
+
+input {
+    display: inline-block;
+    border: thin solid #FFFFFF;
+    border-bottom: solid medium #FFF;
+    color: #444;
+    background-color: #FAFAFA;
+    padding: 10px 10px 10px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+input:focus {
+        border: thin solid #32CD32;
+        border-bottom: solid medium #32CD32;
+        background-color:#FFF;
+    }
+
+label {
+    color: #999;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+    transition: 0.2s;
+}
+
+input:focus ~ label, input:valid ~ label {
+    top: -10px;
+    left: 15px;
+    font-size: small;
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 0 5px 0 5px;
+}
